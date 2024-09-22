@@ -1,0 +1,77 @@
+/* Definición de colores del gradiente */
+:root {
+    --dark-blue: #0d47a1;
+    --medium-blue: #1976d2;
+    --light-blue: #bbdefb;
+}
+
+/* Aplicando los colores */
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+/* Gradientes en los elementos importantes */
+header {
+    background: linear-gradient(135deg, var(--dark-blue), var(--medium-blue));
+    color: white;
+}
+
+/* Estilos del botón principal */
+.btn-primary {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--medium-blue);
+    border-color: var(--medium-blue);
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+/* Estilos de la card */
+.card {
+    border: none;
+    background: linear-gradient(135deg, var(--light-blue), white);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de la barra de navegación */
+.nav-link {
+    font-weight: bold;
+    transition: color 0.3s;
+    color: var(--dark-blue);
+}
+
+.nav-link:hover {
+    color: var(--medium-blue);
+}
+
+/* Animación en la barra de navegación */
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    transform: rotate(90deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+}
