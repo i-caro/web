@@ -1,6 +1,6 @@
 /* Definición de colores del gradiente */
 :root {
-    --dark-blue: #0d47a1;
+    --dark-blue: #07d0bf;
     --medium-blue: #1976d2;
     --light-blue: #bbdefb;
 }
@@ -63,6 +63,33 @@ header {
 
 .navbar-toggler:hover {
     transform: rotate(90deg);
+}
+
+/* Estilos del formulario */
+#contactForm {
+    background-color: var(--light-blue);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm .form-label {
+    color: var(--dark-blue);
+}
+
+#contactForm input {
+    border: 1px solid var(--medium-blue);
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+#contactForm button:hover {
+    background-color: var(--medium-blue);
+    border-color: var(--medium-blue);
 }
 
 /* Responsive */

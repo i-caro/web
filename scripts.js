@@ -36,3 +36,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Manejar el envío del formulario
+    const contactForm = document.getElementById('contactForm');
+    
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+
+        if (name && email) {
+            alert(`Gracias ${name}, hemos recibido tu mensaje con el email: ${email}.`);
+            contactForm.reset();
+        } else {
+            alert('Por favor completa todos los campos.');
+        }
+    });
+});
